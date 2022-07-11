@@ -17,25 +17,25 @@ script:
   - docker --version # print the version for logging
   #  udagram-api-feed
   - docker build -t udagram-api-feed ./udagram-api-feed
-  - docker tag udagram-api-feed tpolak66/udagram-api-feed:v1
+  - docker tag udagram-api-feed tpolak66/udagram-api-feed:latest
   #  udagram-api-user
   - docker build -t udagram-api-user ./udagram-api-user
-  - docker tag udagram-api-user tpolak66/udagram-api-user:v1
+  - docker tag udagram-api-user tpolak66/udagram-api-user:latest
   #  udagram-fontend
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-frontend tpolak66/udagram-frontend:v1
+  - docker tag udagram-frontend tpolak66/udagram-frontend:latest
   #  reverseproxy
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
-  - docker tag udagram-reverseproxy tpolak66/reverseproxy:v1
+  - docker tag udagram-reverseproxy tpolak66/reverseproxy:latest
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   #  udagram-api-feed
-  - docker push tpolak66/udagram-api-feed:v1
+  - docker push tpolak66/udagram-api-feed:latest
   #  udagram-api-user
-  - docker push tpolak66/udagram-api-user:v1
+  - docker push tpolak66/udagram-api-user:latest
   #  udagram-frontend
-  - docker push tpolak66/udagram-frontend:v1
+  - docker push tpolak66/udagram-frontend:latest
   #  udagram-reverseproxy
-  - docker push tpolak66/reverseproxy:v1
+  - docker push tpolak66/reverseproxy:latest
   
   
