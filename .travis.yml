@@ -23,7 +23,7 @@ script:
   - docker tag udagram-api-user tpolak66/udagram-api-user:v1
   #  udagram-fontend
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-fonrtend tpolak66/udagram-frontend:v1
+  - docker tag udagram-frontend tpolak66/udagram-frontend:v1
   #  reverseproxy
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
   - docker tag udagram-reverseproxy tpolak66/reverseproxy:v1
