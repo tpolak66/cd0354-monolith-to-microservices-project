@@ -27,7 +27,7 @@ spec:
             requests:
               memory: "100Mi"
             limits:
-              memory: "200Mi"
+              memory: "7500Mi"
           env:
             - name: POSTGRES_USERNAME
               valueFrom:
@@ -44,11 +44,11 @@ spec:
                 configMapKeyRef:
                   name: env-configmap
                   key: POSTGRES_HOST
-            - name: POSTGRES_DATABASE
+            - name: POSTGRES_DB
               valueFrom:
                 configMapKeyRef:
                   name: env-configmap
-                  key: POSTGRES_DATABASE
+                  key: POSTGRES_DB
             - name: AWS_S3_BUCKET
               valueFrom:
                 configMapKeyRef:
