@@ -22,7 +22,7 @@ spec:
             - containerPort: 80
           resources:
             requests:
-              cpu: "500m"
+              memory: "100Mi"
             limits:
-              cpu: "2000m"
+              memory: "200Mi"
       restartPolicy: Always
