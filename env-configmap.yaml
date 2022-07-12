@@ -9,4 +9,4 @@ data:
   AWS_PROFILE: admin
   AWS_S3_BUCKET: polak-1866005-microserproject
   JWT_SECRET: prod
-  URL: https://22AAE774984295F4FD362BB28C347F95.gr7.us-east-1.eks.amazonaws.com:8100
+  URL: ae4d69f4ea6744d4bba0ea4ed5ec08c7-929223799.us-east-2.elb.amazonaws.com
