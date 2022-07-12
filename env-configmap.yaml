@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  POSTGRES_DATABASE: postgres
+  POSTGRES_HOST: polakmicroservproj.cw3wzpnje6yr.us-east-1.rds.amazonaws.com
+  AWS_REGION: us-east-2
+  AWS_PROFILE: default
+  AWS_S3_BUCKET: polak-1866005-microserproject
+  JWT_SECRET: pol
+  URL: https://22AAE774984295F4FD362BB28C347F95.gr7.us-east-1.eks.amazonaws.com:8100
