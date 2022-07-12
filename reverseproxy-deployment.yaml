@@ -20,9 +20,11 @@ spec:
           imagePullPolicy: Always
           resources:
             requests:
-              cpu: "2048M"
+              memory: "128Mi"
+              cpu: "500M"
             limits:
-              cpu: "500m"
+              memory: "2048Mi"
+              cpu: "2000m"
           ports:
             - containerPort: 8080
       restartPolicy: Always

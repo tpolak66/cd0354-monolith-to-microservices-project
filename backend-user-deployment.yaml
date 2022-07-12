@@ -25,9 +25,11 @@ spec:
           imagePullPolicy: Always
           resources:
             requests:
-              cpu: "2048M"
+              memory: "128Mi"
+              cpu: "5M"
             limits:
-              cpu: "500m"
+              memory: "2048Mi"
+              cpu: "500M"
           env:
             - name: POSTGRES_USERNAME
               valueFrom:
